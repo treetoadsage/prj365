@@ -2,37 +2,39 @@ body {
   background: #000;
   color: #fff;
   padding: 0;
+  letter-spacing: 2px;
+  font-family: helvitica, sans-serif, serif;
 }
 
-h1{
+h1 {
   font-size: 3.5em;
   padding-left: 15px;
   display: inline;
 }
 
-header{
+header {
   float: right;
   padding-top: 15px;
   margin-right: 15px;
   font-size: 18px;
 }
 
-#info_container{
+#info_container {
   font-size: 36px;
   text-align: left;
-  margin-left: 0;
+  margin-left: 5%;
   margin-top: 20px;
   margin-bottom: 20px;
   line-height: 50px;
 }
 
-hr{
+hr {
   margin-top: 10px;
   width: 70%;
 }
 
-#project_list_container{
-  margin-left: 0;
+#project_list_container {
+  margin-left: 5%;
   margin-top: 50px;
   font-size: 18px;
 }
@@ -42,31 +44,43 @@ h2 {
   text-align: center;
 }
 
-div{
+div {
   margin-left: 15%;
+  width: 70%;
   text-align: left;
 }
 
-a{
+a {
   text-decoration: underline 2px solid rgba(255, 255, 255, 0);
   margin: 0 5px;
   color: #fdfd96;
   transition: text-decoration-color 300ms;
 }
 
-a:hover{
+a:hover {
   text-decoration-color: rgba(253, 253, 150, 1);
   cursor: default;
 }
 
-a:visited{
+a:visited {
   color: #4B9CD3;
 }
 
-.tomato{
+.tomato {
   color: #FF6347;
 }
 
-.green{
+.green {
   color: #77DD77;
+}
+
+/* About Page Style Stuff */
+
+.about{
+  margin-top: 5%;
+  font-size: 125%;
+}
+
+.about>a{
+  margin: 0;
 }

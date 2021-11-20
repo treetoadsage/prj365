@@ -1,0 +1,15 @@
+/* I want to use this to test fonts, might not use every one in here.Helvitica is my favorite one though. */
+@font-face {
+  font-family: helvitica;
+  src: url("../fonts/Helvetica.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: dongle;
+  src: url("../fonts/Dongle-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: merri;
+  src: url("../fonts/Merriweather-Regular.ttf") format('truetype');
+}
