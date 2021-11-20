@@ -38,10 +38,35 @@ hr{
 }
 
 h2 {
+  font-size: 28px;
   text-align: center;
 }
 
 div{
   margin-left: 15%;
   text-align: left;
+}
+
+a{
+  text-decoration: underline 2px solid rgba(255, 255, 255, 0);
+  margin: 0 5px;
+  color: #fdfd96;
+  transition: text-decoration-color 300ms;
+}
+
+a:hover{
+  text-decoration-color: rgba(253, 253, 150, 1);
+  cursor: default;
+}
+
+a:visited{
+  color: #4B9CD3;
+}
+
+.tomato{
+  color: #FF6347;
+}
+
+.green{
+  color: #77DD77;
 }
