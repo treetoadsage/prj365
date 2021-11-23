@@ -1,0 +1,167 @@
+body{
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  font-family: merri, sans-serif, serif;
+  animation: color_cycle 60000ms ease-in-out infinite;
+  background-color: #FFF;
+}
+
+@keyframes color_cycle {
+  14.29% {background-color: #AEC6CF;}
+  28.58% {background-color: #77DD77;}
+  42.87% {background-color: #FFD1DC;}
+  57.16% {background-color: #CB99C9;}
+  71.45% {background-color: #D3D3D3;}
+  85.74% {background-color: #FDFD96;}
+  100% {background-color: #FFFFFF;}
+}
+
+h1{
+  font-size: 28px;
+  margin-left: 10px;
+  color: #000;
+  display: inline-block;
+}
+
+header{
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+header>a{
+  text-decoration: none;
+  text-decoration-color: rgba(0,0,0,0);
+  margin: 0 3px;
+  color: #000;
+  transition: text-decoration-color 1s;
+}
+
+header>a:hover{
+  text-decoration: underline;
+  text-decoration-color: rgba(0,0,0,1);
+}
+
+.circleContainer{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.outer_circle{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #999;
+  opacity: 5;
+  border-radius: 150px;
+}
+
+.inner_circle{
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  border-radius: 150px;
+  transform: scale(1.01);
+  animation: breathe_in 10000ms ease-in-out forwards
+  infinite;
+}
+
+@keyframes breathe_in {
+  40% {
+    transform: scale(0.1);
+  }
+  50%{
+    transform: scale(0.1);
+  }
+  90%{
+    transform: scale(1.01);
+  }
+  100%{
+    transform: scale(1.01);
+  }
+}
+
+.instructions{
+  position: relative;
+  height: 30px;
+  text-align: center;
+  margin-right: 160px;
+  margin-top: 5%;
+}
+
+.instructions>span{
+  position: absolute;
+  font-size: 24px;
+}
+
+.ok{
+  left: auto;
+  right: 32.5%;
+  z-index: 2;
+  opacity: 0;
+  animation: ani_ok 4000ms ease-in forwards;
+}
+
+@keyframes ani_ok {
+  0%{
+    opacity: 0;
+  }
+  40%{
+    opacity: 1;
+  }
+  60%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.in {
+  opacity: 0;
+  animation: inhale 10000ms ease-in infinite 4200ms;
+}
+
+@keyframes inhale{
+  10%{
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.out{
+  opacity: 0;
+  animation: exhale 10000ms ease-in infinite 4200ms;
+}
+
+@keyframes exhale{
+  10%{
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+}
