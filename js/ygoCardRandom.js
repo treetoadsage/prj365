@@ -9,13 +9,33 @@ btn.addEventListener("click", function(){
 
 var xhttp = new XMLHttpRequest();
 
+/* Randomizes four scapeGoat token images. */
+var scapeGoat = function(){
+  switch (Math.floor(Math.random() * 4 + 1)) {
+    case 1:
+      return "assets/sheepBlue.jpg";
+      break;
+    case 2:
+      return "assets/sheepRed.jpg";
+      break;
+    case 3:
+      return "assets/sheepOrange.jpg";
+      break;
+    case 4:
+      return "assets/sheepYellow.jpg";
+      break;
+    default:
+      break;
+  }
+};
+
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var myObj = JSON.parse(this.responseText);
 
-    document.querySelector(".cardInfo").innerHTML = myObj.name + "<br></br>" + myObj.desc;
+    document.querySelector(".cardInfo").innerHTML = myObj.name + "<br></br>" + myObj.type + "<br></br>" + myObj.race + "<br></br>" + myObj.atk + "/" + myObj.def + "<br></br>" + myObj.desc;
 
-    document.querySelector(".cardFront").style.background = "url(https://storage.googleapis.com/ygoprodeck.com/pics/" + myObj.id + ".jpg)";
+    document.querySelector(".cardFront").style.background = "url('" + scapeGoat() + "')";
 
     document.querySelector(".cardFront").style.backgroundSize = "328px 480px";
 
@@ -30,9 +50,9 @@ btn2.addEventListener("click", function(){
     if (this.readyState == 4 && this.status == 200) {
       var myObj = JSON.parse(this.responseText);
 
-      document.querySelector(".cardInfo").innerHTML = myObj.name + "<br></br>" + myObj.desc;
+      document.querySelector(".cardInfo").innerHTML = myObj.name + "<br></br>" + myObj.type + "<br></br>" + myObj.race + "<br></br>" + myObj.atk + "/" + myObj.def + "<br></br>" + myObj.desc;
 
-      document.querySelector(".cardFront").style.background = "url(https://storage.googleapis.com/ygoprodeck.com/pics/" + myObj.id + ".jpg)";
+      document.querySelector(".cardFront").style.background = "url('" + scapeGoat() + "')";
 
       document.querySelector(".cardFront").style.backgroundSize = "328px 480px";
 
