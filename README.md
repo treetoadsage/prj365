@@ -1,10 +1,10 @@
-# The Project's README!
-Hi. This is Project: ichi.
+# My Portfolio Site!
+Hi. I have failed ~~Project: ichi.~~
 
-I am debating if I should post this as it's own site apart from GitHub pages. If I were to do so, it'll be up whenever I am able to fund and understand how to publish a site on the internet. I'll update this if I make up my mind.
+I want to add this failure to my growing list of lessons in my journey of computer programming. 
 
-You can follow [here](https://ichiblog.hashnode.dev/).
+You can veiw the site [here](https://treetoadsage.github.io/prj365/index.html). 
 
-I am also on [Twitter](https://twitter.com/NotJoeGardner).
+I am on [Twitter](https://twitter.com/NotJoeGardner).
 
-Thank you for looking at my project. :)
+Thank you for taking the time out to veiw a beginners journey. 
